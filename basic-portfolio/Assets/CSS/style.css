@@ -112,6 +112,7 @@ footer{
   	bottom: 0;
   	left: 0;
 	border-top: 6px solid #64A8A4;
+	z-index: 10;
 }
 footer p{
 	color: #A1A2AB;

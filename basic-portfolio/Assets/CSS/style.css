@@ -57,12 +57,13 @@ ul{
 	margin: auto;
 	overflow: auto;
 	padding-top: 40px;
+	
 }
 #about-me-box{
 	width: 650px;
 	float: left;
 	background-color: #FFFFFF;
-	padding: 20px;
+	padding: 20px 20px 60px 20px;
 }
 #about-me-box{
 	padding: 20px 30px;

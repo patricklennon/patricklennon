@@ -64,6 +64,8 @@ ul{
 	float: left;
 	background-color: #FFFFFF;
 	padding: 20px 20px 60px 20px;
+	margin-bottom: 200px;
+
 }
 #about-me-box{
 	padding: 20px 30px;
@@ -106,7 +108,6 @@ p{
 footer{
 	background-color: #666666;
 	text-align: center;
-	padding: 30px;
 	margin-top: 150px;
 	position: sticky;
   	right: 0;
@@ -114,9 +115,11 @@ footer{
   	left: 0;
 	border-top: 6px solid #64A8A4;
 	z-index: 10;
+	
 }
 footer p{
 	color: #A1A2AB;
+	padding: 30px;
 }
 h1 a:hover, #nav a:hover{
 	color:  #2D3047;

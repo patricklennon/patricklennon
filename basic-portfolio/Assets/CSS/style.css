@@ -108,7 +108,7 @@ footer{
 	text-align: center;
 	padding: 30px;
 	margin-top: 150px;
-	position: fixed;
+	position: sticky;
   	right: 0;
   	bottom: 0;
   	left: 0;

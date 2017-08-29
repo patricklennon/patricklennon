@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Psychic Game</title>
-	<link rel="text/javascript" href="assets/javascript/javascript.js">
+  <meta charset="UTF-8">
+  <title>The Psychic Game</title>
+  <script type="text/javascript" src="javascript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
+
 <body>
-<h1>The Psychic Game</h1>
-<h2>Guess What I'm thinking of</h2>
-<ul>
-	<li>Wins:</li>
-	<li>Losses:</li>
-	<li>Guesses Left:</li>
-	<li>Your guesses so far:</li>
-</ul>
+<div class="wrapper">
+        <header>
+        	<h1>The Psychic Game</h1>
+        </header>
+<!--Empty Div for the tallies-->
+    <div id="game">
+          <ul class="list-group">
+            <li class="list-group-item"><p id="wins">Wins: </p></li>
+            <li class="list-group-item"><p id="losses">Losses: </p></li>
+            <li class="list-group-item"><p id="guessLeft">Guesses Left: </p></li>
+            <li class="list-group-item"><p id="let">Your Guesses so far: </p></li>
+          </ul>  
+	  </div>  
+	</div> 
 </body>
+
 </html>

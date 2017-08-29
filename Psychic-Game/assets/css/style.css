@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-image: url(http://thmhc.com/blog/wp-content/uploads/2017/02/a-psychic-medium-etdgsfh.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top:3%
+}
+.wrapper{
+	max-width: 640px;
+	background-color: #FFFFFF;
+	opacity: 0.9;
+	margin: 0 auto;
+	padding: 80px;
+}
+header h1, .instructions h3{
+	text-align: center;
+	
+}

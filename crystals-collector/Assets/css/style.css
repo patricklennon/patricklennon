@@ -1,0 +1,74 @@
+*{
+	margin: 0 auto;
+}
+#container{
+	padding: 40px 100px 100px 100px;
+	background-color: #5bc0de;
+	max-width: 1200px;
+	height: 100%;
+}
+h1, .given-number, .wins-losses, #instructions, .total-score{
+	text-align: center;
+	text-transform: uppercase;
+}
+h1{
+	background-color: rgba(217,83,79,0.89);
+	padding: 30px;
+	
+	letter-spacing: 10px;
+}
+#instructions{
+	padding: 20px;
+}
+#hide-me{
+	line-height: 15px;
+	width: 400px;
+	display: none;
+}
+#section-container{
+	padding-top: 90px;
+}
+.given-number, .wins-losses{
+	padding: 20px;
+	letter-spacing: 1px;
+}
+#total-score{
+	padding-top: 0px;
+}
+.total-score{
+	text-align: center;
+}
+.given-number, .wins-losses{
+	background-color: #F1E4E8;
+}
+#total-score{
+	font-size: 120px
+}
+#given-number{
+	font-size: 40px;
+}
+@media screen and (max-width: 1199px){
+	.given-number{
+		margin-bottom: 90px;
+		width: 300px;
+		border: 5px solid #333333;
+	}
+	.diamonds{
+		margin: 90px 0px;
+	}
+	.wins-losses{
+		width: 300px;
+		border: 5px solid #333333;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.img-responsive{
+		width: 200px;
+	}
+	.diamonds{
+		display: flex;
+	}
+	
+}

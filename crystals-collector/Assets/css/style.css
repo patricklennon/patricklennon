@@ -47,6 +47,9 @@ h1{
 #given-number{
 	font-size: 40px;
 }
+.img-responsive:active{
+	opacity: 0.5;
+}
 @media screen and (max-width: 1199px){
 	.given-number{
 		margin-bottom: 90px;
@@ -60,9 +63,7 @@ h1{
 		width: 300px;
 		border: 5px solid #333333;
 	}
-
 }
-
 @media screen and (max-width: 767px){
 	.img-responsive{
 		width: 200px;

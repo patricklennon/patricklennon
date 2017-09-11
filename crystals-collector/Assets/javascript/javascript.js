@@ -16,7 +16,7 @@ $(document).ready(function(){
 	
 	//function that shows a random number on #given-number
 	
-	$("#given-number").text(givenNumber); 43
+	$("#given-number").text(givenNumber); 
 
 	
 	//define random number to each crystal
@@ -26,6 +26,7 @@ $(document).ready(function(){
 	var blueCrystal = Math.floor ((Math.random() * 12) + 1);
 	var greenCrystal = Math.floor ((Math.random() * 12) + 1);
 	var pinkCrystal = Math.floor ((Math.random() * 12) + 1);
+	
 	
 	//set userTotal, wins and losses to 0
 	
@@ -37,14 +38,15 @@ $(document).ready(function(){
 	//funtion reset
 	
 	function reset(){
-		var givenNumber = Math.floor((Math.random() * 120) + 1);
+		givenNumber = Math.floor((Math.random() * 120) + 1); 
 		$("#given-number").text(givenNumber);
+		blackCrystal = Math.floor ((Math.random() * 12) + 1);
+		blueCrystal = Math.floor ((Math.random() * 12) + 1);
+		greenCrystal = Math.floor ((Math.random() * 12) + 1);
+		pinkCrystal = Math.floor ((Math.random() * 12) + 1);
 		userTotal = 0;
-		$("#total-score").text(userTotal);
-		var blackCrystal = Math.floor ((Math.random() * 12) + 1);
-		var blueCrystal = Math.floor ((Math.random() * 12) + 1);
-		var greenCrystal = Math.floor ((Math.random() * 12) + 1);
-		var pinkCrystal = Math.floor ((Math.random() * 12) + 1);
+		$("#total-score").empty();
+		$("#total-score").append(userTotal);
 	}
 	
 	
@@ -66,7 +68,7 @@ $(document).ready(function(){
 			}
 	}
 	
-	//on click events and statements
+	//on click events
 	
 	function addScore(){
 		

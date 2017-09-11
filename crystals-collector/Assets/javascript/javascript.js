@@ -16,10 +16,11 @@ $(document).ready(function(){
 	
 	//function that shows a random number on #given-number
 	
-	$("#given-number").text(givenNumber);
+	$("#given-number").text(givenNumber); 43
 
 	
 	//define random number to each crystal
+	
 	
 	var blackCrystal = Math.floor ((Math.random() * 12) + 1);
 	var blueCrystal = Math.floor ((Math.random() * 12) + 1);
@@ -38,81 +39,65 @@ $(document).ready(function(){
 	function reset(){
 		var givenNumber = Math.floor((Math.random() * 120) + 1);
 		$("#given-number").text(givenNumber);
+		userTotal = 0;
+		$("#total-score").text(userTotal);
 		var blackCrystal = Math.floor ((Math.random() * 12) + 1);
 		var blueCrystal = Math.floor ((Math.random() * 12) + 1);
 		var greenCrystal = Math.floor ((Math.random() * 12) + 1);
 		var pinkCrystal = Math.floor ((Math.random() * 12) + 1);
-		userTotal = 0;
-		$("#total-score").text(userTotal);
 	}
 	
 	
+	//logic
 	
-	//on click events and statements
-	
-	
-		$("#black-diamond").on("click", function(){
-			userTotal = userTotal + blackCrystal;
-			$("#total-score").text(userTotal);
-			if (userTotal === givenNumber){
+	function statement(){
+		if (userTotal === givenNumber){
 				wins++;
+			
 				$("#total-wins").text(wins);
 				$("#display").text("YOU WON!");
 				reset();
 			} else if ( userTotal > givenNumber){
 				losses++;
+				
 				$("#total-losses").text(losses);
 				$("#display").text("YOU LOST!");
 				reset();
 			}
+	}
+	
+	//on click events and statements
+	
+	function addScore(){
+		
+	
+		$("#black-diamond").on("click", function(){
+			userTotal = userTotal + blackCrystal;
+			$("#total-score").text(userTotal);
+			statement();
+			
 		});
 
 		$("#blue-diamond").on("click", function(){
 			userTotal = userTotal + blueCrystal;
 			$("#total-score").text(userTotal);
-			if (userTotal === givenNumber){
-				wins++;
-				$("#total-wins").text(wins);
-				$("#display").text("YOU WON!");
-				reset();
-			} else if ( userTotal > givenNumber){
-				losses++;
-				$("#total-losses").text(losses);
-				$("#display").text("YOU LOST!");
-				reset();
-			}
+			statement();
 		});
 
 		$("#green-diamond").on("click", function(){
 			userTotal = userTotal + greenCrystal;
 			$("#total-score").text(userTotal);
-			if (userTotal === givenNumber){
-				wins++;
-				$("#total-wins").text(wins);
-				$("#display").text("YOU WON!");
-				reset();
-			} else if ( userTotal > givenNumber){
-				losses++;
-				$("#total-losses").text(losses);
-				$("#display").text("YOU LOST!");
-				reset();
-			}
+			statement();
 		});
 
 		$("#pink-diamond").on("click", function(){
 			userTotal = userTotal + pinkCrystal;
 			$("#total-score").text(userTotal);
-			if (userTotal === givenNumber){
-				wins++;
-				$("#total-wins").text(wins);
-				$("#display").text("YOU WON!");
-				reset();
-			} else if ( userTotal > givenNumber){
-				losses++;
-				$("#total-losses").text(losses);
-				$("#display").text("YOU LOST!");
-				reset();
-			}
+			statement();
 		});
+		
+	}
+	
+	addScore();
 	
 });
